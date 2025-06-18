@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="./output.css" rel="stylesheet" />
+</head>
+<body class="bg-white flex items-center justify-center min-h-screen">
+  <main>
+    <section class="flex h-[540px] w-[800px] border border-white rounded-lg drop-shadow-sm">
+      
+      <!-- Left box with image and overlaid steps -->
+      <div class="w-2/5 bg-white h-full relative p-4">
+        <img 
+          src="../assests/rm183-techi-02.jpg" 
+          alt="Image" 
+          class="h-full w-full object-cover rounded-xl"
+        />
+
+        <!-- Centered Steps Overlay -->
+        <ul class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 space-y-4 text-white font-sans">
+          <li class="flex items-center gap-4 px-4 py-3 rounded-lg bg-gray-700 bg-opacity-70">
+            <span class="text-xl font-bold border-2 border-white rounded-full bg-gray-500 w-8 h-8 flex items-center justify-center">
+              1
+            </span>
+            <div class="leading-tight text-white">
+              <div class="text-sm font-semibold">Step 1</div>
+              <div class="text-xs tracking-wide">YOUR INFO</div>
+            </div>
+          </li>
+          <li class="flex items-center gap-4 px-4 py-3 rounded-lg bg-blue-200 text-blue-950">
+            <span class="text-xl font-bold border-2 border-white rounded-full bg-blue-400 w-8 h-8 flex items-center justify-center">
+              2
+            </span>
+            <div class="leading-tight">
+              <div class="text-sm font-semibold">Step 2</div>
+              <div class="text-xs font-bold tracking-wide">SELECT PLAN</div>
+            </div>
+          </li>
+          <li class="flex items-center gap-4 px-4 py-3 rounded-lg bg-gray-700 bg-opacity-70">
+            <span class="text-xl font-bold border-2 border-white rounded-full bg-gray-500 w-8 h-8 flex items-center justify-center">
+              3
+            </span>
+            <div class="leading-tight text-white">
+              <div class="text-sm font-semibold">Step 3</div>
+              <div class="text-xs tracking-wide">ADD-ONS</div>
+            </div>
+          </li>
+          <li class="flex items-center gap-4 px-4 py-3 rounded-lg bg-gray-700 bg-opacity-70">
+            <span class="text-xl font-bold border-2 border-white rounded-full bg-gray-500 w-8 h-8 flex items-center justify-center">
+              4
+            </span>
+            <div class="leading-tight text-white">
+              <div class="text-sm font-semibold">Step 4</div>
+              <div class="text-xs tracking-wide">SUMMARY</div>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Right box with form -->
+      <div class="w-3/5 bg-white h-full flex flex-col justify-start p-6 relative">
+        <h2 class="text-blue-700 text-3xl font-bold mb-2 text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">
+          Select the Plan
+        </h2>
+        <p class="text-gray-600 text-lg mb-6">Please select your country from the list below.</p>
+
+        <form class="space-y-4">
+          <!-- Country Select -->
+          <div>
+            <label for="country" class="block mb-1 text-sm font-medium text-blue-900">Country</label>
+            <select id="country" required
+              class="w-full p-2.5 bg-white border border-gray-300 text-sm rounded-lg 
+                     focus:outline-none focus:ring-2 focus:ring-offset-2 
+                     focus:ring-pink-500 focus:border-purple-500 transition-all duration-300">
+              <option value="" disabled selected>Select your plan</option>
+              <option value="us">$100000000</option>
+              <option value="ca">$20000000000</option>
+              <option value="uk">$1000000</option>
+              <option value="au">$1000000000</option>
+              <option value="in">$30000000000</option>
+              <!-- Add more countries as needed -->
+            </select>
+          </div>
+
+          <!-- Next Step Button -->
+          <a type="submit" href="./index.html" 
+            class="absolute bottom-12 left-0 text-white bg-blue-900 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center w-[100px]">
+            previous
+          </a>
+            <button type="submit"
+            class="absolute bottom-12 right-0 text-white bg-blue-900 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center w-[100px]">
+            next
+          </button>
+        </form>
+      </div>
+
+    </section>
+  </main>
+</body>
+</html>

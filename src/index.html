@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+</head>
+<body class="bg-white flex items-center justify-center min-h-screen">
+  <main>
+    <section class="flex h-[540px] w-[800px] border border-white rounded-lg drop-shadow-sm">
+      
+      <!-- Left box with image -->
+     <!-- Left box with image and overlaid list -->
+<!-- Left box with image and overlaid steps -->
+<div class="w-2/5 bg-white h-full relative p-4">
+  <img 
+    src="../assests/rm183-techi-02.jpg" 
+    alt="Image" 
+    class="h-full w-full object-cover rounded-xl"
+  >
+
+  <!-- Centered Steps Overlay -->
+  <ul class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 space-y-4 text-white font-sans">
+  <li class="flex items-center gap-4 px-4 py-3 rounded-lg bg-blue-200 text-blue-950">
+    <span class="text-xl font-bold border-2 border-white rounded-full bg-blue-400 w-8 h-8 flex items-center justify-center">
+      1
+    </span>
+    <div class="leading-tight">
+      <div class="text-sm font-semibold">Step 1</div>
+      <div class="text-xs font-bold tracking-wide">YOUR INFO</div>
+    </div>
+  </li>
+  <li class="flex items-center gap-4 px-4 py-3 rounded-lg bg-gray-700 bg-opacity-70">
+    <span class="text-xl font-bold border-2 border-white rounded-full bg-gray-500 w-8 h-8 flex items-center justify-center">
+      2
+    </span>
+    <div class="leading-tight text-white">
+      <div class="text-sm font-semibold">Step 2</div>
+      <div class="text-xs tracking-wide">SELECT PLAN</div>
+    </div>
+  </li>
+  <li class="flex items-center gap-4 px-4 py-3 rounded-lg bg-gray-700 bg-opacity-70">
+    <span class="text-xl font-bold border-2 border-white rounded-full bg-gray-500 w-8 h-8 flex items-center justify-center">
+      3
+    </span>
+    <div class="leading-tight text-white">
+      <div class="text-sm font-semibold">Step 3</div>
+      <div class="text-xs tracking-wide">ADD-ONS</div>
+    </div>
+  </li>
+  <li class="flex items-center gap-4 px-4 py-3 rounded-lg bg-gray-700 bg-opacity-70">
+    <span class="text-xl font-bold border-2 border-white rounded-full bg-gray-500 w-8 h-8 flex items-center justify-center">
+      4
+    </span>
+    <div class="leading-tight text-white">
+      <div class="text-sm font-semibold">Step 4</div>
+      <div class="text-xs tracking-wide">SUMMARY</div>
+    </div>
+  </li>
+</ul>
+
+</div>
+
+
+
+      <!-- Right box with form -->
+      <div class="w-3/5 bg-white h-full flex flex-col justify-start p-6">
+        <h2 class="text-blue-700 text-3xl font-bold mb-2 text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">Personal Info</h2>
+        <p class="text-gray-600 text-lg mb-6">Please provide your name, phone number, and email address.</p>
+
+        <form class="space-y-4" action="./plan.html">
+          <!-- Name -->
+          <div>
+            <label for="name" class="block mb-1 text-sm font-medium text-blue-900">Full Name</label>
+          <input type="text" id="name" placeholder="Ayush Sinha" required
+  class="w-full p-2.5 bg-white border border-gray-300 text-sm rounded-lg 
+         focus:outline-none focus:ring-2 focus:ring-offset-2 
+         focus:ring-pink-500 focus:border-purple-500 transition-all duration-300" />
+
+          </div>
+
+          <!-- Phone -->
+          <div>
+            <label for="phone" class="block mb-1 text-sm font-medium text-blue-900">Phone Number</label>
+           <input type="tel" id="phone" placeholder="123-456-7890" required
+  class="w-full p-2.5 bg-white border border-gray-300 text-sm rounded-lg 
+         focus:outline-none focus:ring-2 focus:ring-offset-2 
+         focus:ring-blue-400 focus:border-indigo-500 transition duration-300" />
+
+          </div>
+
+          <!-- Email -->
+          <div>
+            <label for="email" class="block mb-1 text-sm font-medium text-blue-900">Email Address</label>
+           <input type="email" id="email" placeholder="name@example.com" required
+  class="w-full p-2.5 bg-white border border-gray-300 text-sm rounded-lg 
+         focus:outline-none focus:ring-2 focus:ring-offset-2 
+         focus:ring-emerald-400 focus:border-emerald-600 transition duration-300" />
+
+          </div>
+
+          <!-- Next Step Button -->
+          <button type="submit"
+            class=" absolute bottom-5 right-0 text-white bg-blue-900 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center" style="width: 100px ;">
+            Next
+          </button>
+        </form>
+      </div>
+
+    </section>
+  </main>
+</body>
+</html>
